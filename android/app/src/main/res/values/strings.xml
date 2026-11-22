@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Розница для Казахстана</string>
+    <string name="title_activity_main">Розница для Казахстана</string>
+    <string name="package_name">kz.kassa.retail</string>
+    <string name="custom_url_scheme">kz.kassa.retail</string>
+</resources>

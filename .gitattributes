@@ -1,0 +1,19 @@
+# Переносы строк: скрипты сборки должны приходить на Linux-раннер с LF,
+# иначе gradlew не запустится («bad interpreter: /usr/bin/env sh\r»).
+*.sh text eol=lf
+gradlew text eol=lf
+gradlew.bat text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Бинарники не «правим» никогда
+*.jar binary
+*.png binary
+*.jpg binary
+*.webp binary
+*.ico binary
+*.sqlite binary
+*.wasm binary
+
+# Текстовые файлы по умолчанию
+* text=auto

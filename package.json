@@ -1,0 +1,47 @@
+{
+  "name": "kassa",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "cap:sync": "npm run build && cap sync",
+    "cap:open": "cap open android",
+    "apk": "npm run cap:sync && cap build android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.2",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/core": "^8.6.2",
+    "@capacitor/filesystem": "^8.1.5",
+    "@capacitor/share": "^8.0.3",
+    "@tauri-apps/api": "^2.12.4",
+    "autoprefixer": "^10.6.2",
+    "html5-qrcode": "^2.3.8",
+    "i18next": "^26.7.1",
+    "postcss": "^8.5.32",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-i18next": "^17.1.12",
+    "recharts": "^3.10.1",
+    "sql.js": "^1.15.2",
+    "tailwindcss": "^4.3.4",
+    "uuid": "^14.0.3",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.6.2",
+    "@tailwindcss/postcss": "^4.3.4",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/sql.js": "^1.4.11",
+    "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.89.0",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.5"
+  }
+}
